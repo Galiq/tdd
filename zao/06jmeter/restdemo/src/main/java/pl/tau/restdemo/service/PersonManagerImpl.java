@@ -11,16 +11,17 @@ import java.util.List;
  * Created by tp on 24.04.17.
  */
 @Component
-public class PersonManagerImpl implements  PersonManager {
+public class PersonManagerImpl implements PersonManager {
 
     private Connection connection;
 
-    private String url = "jdbc:hsqldb:hsql://localhost/workdb";
-
+    private String url = "jdbc:hsqldb:hsql://localhost";
 
     private PreparedStatement addPersonStmt;
     private PreparedStatement deletePersonStmt;
     private PreparedStatement getAllPersonsStmt;
+    private PreparedStatement getPersonByIdStatement;
+
 
 
     public PersonManagerImpl() throws SQLException {
@@ -49,23 +50,31 @@ public class PersonManagerImpl implements  PersonManager {
                 .prepareStatement("DELETE FROM Person where id = ?");
         getAllPersonsStmt = connection
                 .prepareStatement("SELECT id, name, yob FROM Person");
+        getPersonByIdStatement = connection
+                .prepareStatement( "SELECT id, name, yob FROM Person WHERE id = ?");
 
     }
 
     @Override
-    public Connection getConnection() {
+    public Connection getConnection() throws SQLException {
+        if (connection.isClosed())
+            return DriverManager.getConnection(url);
         return connection;
     }
 
     @Override
-    public void deletePerson(Person person) throws SQLException {
-        addPersonStmt.setLong(1, person.getId());
-        deletePersonStmt.executeUpdate();
+    public void deletePerson(int id) {
+        try {
+            deletePersonStmt.setInt(1, id);
+            deletePersonStmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
     public void clearPersons() throws SQLException {
-        connection.prepareStatement("delete from Person").executeUpdate();
+        getConnection().prepareStatement("delete from Person").executeUpdate();
     }
 
     @Override
@@ -80,13 +89,27 @@ public class PersonManagerImpl implements  PersonManager {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+
         return count;
     }
 
     @Override
-    public Person getPerson(Person person) {
-	return null;        
-//throw new NotImplementedException(); // TODO: Implemet it!
+    public Person getPerson(int personId) {
+        Person person = null;
+        try {
+            getPersonByIdStatement.setInt(1, personId);
+            ResultSet rs = getPersonByIdStatement.executeQuery();
+
+            if (rs.next()) {
+                person = new Person();
+                person.setId(rs.getInt("id"));
+                person.setName(rs.getString("name"));
+                person.setYob(rs.getInt("yob"));
+            }
+        } catch ( SQLException e ) {
+            e.printStackTrace();
+        }
+        return person;
     }
 
     public List<Person> getAllPersons() {

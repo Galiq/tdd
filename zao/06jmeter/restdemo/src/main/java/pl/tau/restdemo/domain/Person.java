@@ -2,23 +2,23 @@ package pl.tau.restdemo.domain;
 
 public class Person {
 	
-	private long id;
+	private int id;
 	
 	private String name;
 	private int yob;
 	
 	public Person() {
 	}
-//
-//	public Person(String name, int yob) {
-//		super();
-//		this.name = name;
-//		this.yob = yob;
-//	}
-	public long getId() {
+
+	public Person(String name, int yob) {
+		super();
+		this.name = name;
+		this.yob = yob;
+	}
+	public int getId() {
 		return id;
 	}
-	public void setId(long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 	public String getName() {
