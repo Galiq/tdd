@@ -1,7 +1,6 @@
 
-#include "db_memory.hpp"
-#include "db_interface.hpp"
-#include <stdexcept>
+#include "../include/db_memory.hpp"
+#include "../include/db_interface.hpp"
 
 
 namespace db {

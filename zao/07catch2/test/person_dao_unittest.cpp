@@ -16,14 +16,12 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include <catch.hpp>
-#include <json.hpp>
-#include <fakeit.hpp>
-
-#include <person_dao.hpp>
-#include <db_memory.hpp>
 #include <iostream>
-#include <string>
+#include "../thirdparty/json/json.hpp"
+#include "../thirdparty/fakeit/fakeit.hpp"
+#include "../thirdparty/catch/catch.hpp"
+#include "../include/person_dao.hpp"
+#include "../include/db_memory.hpp"
 
 using json = nlohmann::json;
 using namespace fakeit;
@@ -33,18 +31,70 @@ using namespace db;
 using namespace crud;
 
 
-TEST_CASE( "simple crud test", "[crud][inmemory]" ) {
-	Person p = {.id = 1, .name = "Janusz", .yob = 1955};
+TEST_CASE("simple crud test", "[crud][inmemory]") {
+    Person p = {.id = 1, .name = "Janusz", .yob = 1955};
 
-	Database_in_memory datasource;
-	Person_dao dao ( &datasource, "Person_" );
+    Database_in_memory datasource;
+    Person_dao dao(&datasource, "Person_");
 
-	SECTION( "write and read database record" ) {
-		dao.put( p );
-		Person v = dao.get( 1 );
-		REQUIRE( v == p );
-	}
+    SECTION("write and read database record") {
+        dao.put(p);
+        Person v = dao.get(1);
+        REQUIRE(v == p);
+    }
 }
 
+TEST_CASE("delete from db", "[crud][inmemory]") {
+    Person p = {.id = 1, .name = "Janusz", .yob = 1955};
 
+    Database_in_memory datasource;
+    Person_dao dao(&datasource, "Person_");
+
+    SECTION("write and read database record") {
+        dao.put(p);
+        std::list<Person> ret = dao.get();
+        REQUIRE(ret.size() == 1);
+    }
+
+    SECTION("delete database record") {
+        dao.del(p);
+        std::list<Person> ret = dao.get();
+        REQUIRE(ret.size() == 0);
+    }
+}
+
+TEST_CASE("update record in db", "[crud][inmemory]") {
+    Person p = {.id = 1, .name = "Janusz", .yob = 1955};
+
+    Database_in_memory datasource;
+    Person_dao dao(&datasource, "Person_");
+
+    SECTION("write and read database record") {
+        dao.put(p);
+        Person v = dao.get(1);
+        REQUIRE(v == p);
+    }
+
+    SECTION("write and read database record") {
+        dao.put(p);
+        Person v = dao.get(1);
+        REQUIRE(v == p);
+    }
+
+    SECTION("update database record") {
+        p.name = "Grazyna";
+        dao.put(p);
+        Person v = dao.get(1);
+        REQUIRE(v.name == "Grazyna");
+    }
+}
+
+TEST_CASE("getting non-existing record", "[crud][inmemory]") {
+    Database_in_memory datasource;
+    Person_dao dao(&datasource, "Person_");
+
+    SECTION("write and read database record") {
+        CHECK_THROWS(dao.get(1));
+    }
+}
 

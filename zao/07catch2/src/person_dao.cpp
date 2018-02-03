@@ -1,6 +1,7 @@
-#include "person_dao.hpp"
-
-#include "json.hpp"
+#include "../include/person_dao.hpp"
+#include "../thirdparty/json/json.hpp"
+#include "../include/person_entity.hpp"
+#include "../include/db_interface.hpp"
 
 #include <iostream>
 

@@ -16,14 +16,13 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include <catch.hpp>
-#include <json.hpp>
-#include <fakeit.hpp>
-
-#include <person_dao.hpp>
-#include <db_memory.hpp>
 #include <iostream>
 #include <string>
+#include "../thirdparty/json/json.hpp"
+#include "../thirdparty/catch/catch.hpp"
+#include "../thirdparty/fakeit/fakeit.hpp"
+#include "../include/db_memory.hpp"
+#include "../include/person_dao.hpp"
 
 using json = nlohmann::json;
 using namespace fakeit;

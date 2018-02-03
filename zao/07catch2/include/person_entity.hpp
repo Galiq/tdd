@@ -1,7 +1,7 @@
 #ifndef __PERSON_ENTITY____
 #define __PERSON_ENTITY____
 
-#include "json.hpp"
+#include "../thirdparty/json/json.hpp"
 
 #include <string>
 #include <ostream>

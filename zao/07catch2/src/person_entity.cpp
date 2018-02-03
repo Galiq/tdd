@@ -1,8 +1,5 @@
-#include "person_entity.hpp"
-#include "json.hpp"
-
-#include <string>
-#include <ostream>
+#include "../include/person_entity.hpp"
+#include "../thirdparty/json/json.hpp"
 
 namespace crud {
 

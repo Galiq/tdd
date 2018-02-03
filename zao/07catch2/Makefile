@@ -1,5 +1,5 @@
 # This are internal config for Make
-VER=$(shell hg head | head -n 1 | awk -F'[: \t]+' '{print $$2}')
+#VER=$(shell hg head | head -n 1 | awk -F'[: \t]+' '{print $$2}')
 VER_MAJOR=0
 VER_MINOR=0
 CPPFLAGS= -fPIC -pthread -std=c++11 -ggdb -fopenmp -I./include -I./thirdparty/json -I./thirdparty/catch -I./thirdparty/fakeit

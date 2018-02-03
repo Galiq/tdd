@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="07catch2"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="07catch2">
+				<Option output="/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/cmake-build-debug/07catch2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/cmake-build-debug/Makefile&quot;  VERBOSE=1 07catch2"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="07catch2/fast">
+				<Option output="/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/cmake-build-debug/07catch2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/cmake-build-debug/Makefile&quot;  VERBOSE=1 07catch2/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/LICENSE">
+			<Option target="07catch2"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/Makefile">
+			<Option target="07catch2"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/bitbucket-pipelines.yml">
+			<Option target="07catch2"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/build/.placeholder">
+			<Option target="07catch2"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/build/test/.placeholder">
+			<Option target="07catch2"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/include/db_interface.hpp">
+			<Option target="07catch2"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/include/db_memory.hpp">
+			<Option target="07catch2"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/include/person_dao.hpp">
+			<Option target="07catch2"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/include/person_entity.hpp">
+			<Option target="07catch2"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/src/db_memory.cpp">
+			<Option target="07catch2"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/src/person_dao.cpp">
+			<Option target="07catch2"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/src/person_entity.cpp">
+			<Option target="07catch2"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/test/person_dao_bdd.cpp">
+			<Option target="07catch2"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/test/person_dao_mock.cpp">
+			<Option target="07catch2"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/test/person_dao_unittest.cpp">
+			<Option target="07catch2"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/test/unit.cpp">
+			<Option target="07catch2"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/thirdparty/catch/catch.hpp">
+			<Option target="07catch2"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/thirdparty/fakeit/fakeit.hpp">
+			<Option target="07catch2"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/thirdparty/json/json.hpp">
+			<Option target="07catch2"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/galik/Desktop/PJATK/sem7/tau/tdd/zao/07catch2/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

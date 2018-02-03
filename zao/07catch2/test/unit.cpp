@@ -1,3 +1,3 @@
 // testy jednostkowe
 #define CATCH_CONFIG_MAIN
-#include <catch.hpp>
+#include "../thirdparty/catch/catch.hpp"
